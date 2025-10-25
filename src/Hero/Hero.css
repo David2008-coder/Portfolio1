@@ -1,0 +1,208 @@
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 10%;
+  background: radial-gradient(circle at top left, #001100, #000);
+  color: white;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 550px;
+  animation: fadeInLeft 1.8s ease;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  background: linear-gradient(to right, limegreen, yellowgreen);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #b5f7b5;
+  margin-bottom: 20px;
+  animation: slideIn 2s ease;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  color: #ddd;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.hero-text span {
+  color: limegreen;
+  font-weight: 600;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-btn {
+  background: linear-gradient(90deg, darkgreen, limegreen);
+  color: white;
+  border: none;
+}
+
+.primary-btn:hover {
+  background: linear-gradient(90deg, limegreen, yellow);
+  transform: scale(1.05);
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 2px solid limegreen;
+  color: limegreen;
+}
+
+.secondary-btn:hover {
+  background: limegreen;
+  color: black;
+  transform: scale(1.05);
+}
+
+.social-icons {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  font-size: 1.8rem;
+}
+
+.social-icons a {
+  color: limegreen;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: yellow;
+  transform: translateY(-5px);
+}
+
+/* Image Section */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+.hero-image img {
+  width: 450px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 128, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Floating Animation */
+.floating-bubble {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: floatUp 6s ease-in-out infinite;
+}
+
+.bubble1 {
+  width: 60px;
+  height: 60px;
+  background: limegreen;
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.bubble2 {
+  width: 40px;
+  height: 40px;
+  background: yellowgreen;
+  top: 60%;
+  right: 20%;
+  animation-delay: 2s;
+}
+
+.bubble3 {
+  width: 80px;
+  height: 80px;
+  background: green;
+  bottom: 15%;
+  left: 40%;
+  animation-delay: 4s;
+}
+
+@keyframes floatImage {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0) scale(1); opacity: 0.6; }
+  50% { transform: translateY(-20px) scale(1.1); opacity: 1; }
+  100% { transform: translateY(0) scale(1); opacity: 0.6; }
+}
+
+/* Text Animation */
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-100px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 60px 5%;
+  }
+
+  .hero-title {
+    font-size: 2.6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-image img {
+    width: 300px;
+    margin-top: 40px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}

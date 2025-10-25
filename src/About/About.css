@@ -1,0 +1,127 @@
+.about-section {
+  padding: 100px 10%;
+  color: white;
+  background-color: #000;
+  line-height: 1.7;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 3rem;
+  background: linear-gradient(to right, green, limegreen, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+
+.about-content {
+  font-size: 1.1rem;
+  text-align: justify;
+  margin-bottom: 60px;
+}
+
+.about-text {
+  margin-bottom: 25px;
+}
+
+.highlight {
+  color: limegreen;
+  font-weight: 600;
+}
+
+/* Certificate section */
+.certificate-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.certificate-section h2 {
+  font-size: 2rem;
+  background: linear-gradient(to right, lime, greenyellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.certificate-image {
+  max-width: 600px;
+  width: 90%;
+  border: 3px solid green;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 128, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.certificate-image:hover {
+  transform: scale(1.05);
+}
+
+/* Skills section */
+.skills-section {
+  margin-top: 80px;
+}
+
+.skills-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  background: linear-gradient(to right, green, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.skills-list li {
+  margin-bottom: 25px;
+}
+
+.skills-list span {
+  display: inline-block;
+  width: 120px;
+  font-weight: 600;
+}
+
+.bar {
+  display: inline-block;
+  width: 60%;
+  height: 12px;
+  background-color: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 8px;
+}
+
+.html { width: 90%; background: linear-gradient(90deg, limegreen, yellowgreen); }
+.css { width: 80%; background: linear-gradient(90deg, skyblue, dodgerblue); }
+.js { width: 75%; background: linear-gradient(90deg, gold, orange); }
+.react { width: 70%; background: linear-gradient(90deg, cyan, blue); }
+.ai { width: 60%; background: linear-gradient(90deg, purple, violet); }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 5%;
+  }
+
+  .certificate-image {
+    width: 100%;
+  }
+
+  .skills-list span {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .bar {
+    width: 100%;
+  }
+}

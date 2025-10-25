@@ -1,0 +1,104 @@
+/* General layout */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 16, 5, 0.9);
+  backdrop-filter: blur(10px);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 16, 5, 1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo styling */
+.nav-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: linear-gradient(to right, greenyellow, limegreen);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+
+/* Links container */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: greenyellow;
+  transform: scale(1.1);
+}
+
+/* Button style */
+.nav-btn {
+  background-color: darkgreen;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: limegreen;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* Mobile menu icon */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    flex-direction: column;
+    gap: 30px;
+    background: rgba(0, 16, 5, 0.95);
+    width: 60%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

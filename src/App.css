@@ -1,0 +1,22 @@
+* {
+  font-family: 'Alfa slab One', cursive;
+}
+
+body {
+  background: #001005;
+  color: white;
+  height: 100vh;
+
+  animation: slideInLeft 2s ease-in 0s both;
+
+  transform: translateX(-150px);
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
