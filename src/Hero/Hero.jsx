@@ -5,7 +5,9 @@ import pro1 from '../assets/pro1.jpeg';
 import pro2 from '../assets/pro2.jpeg';
 import pro3 from '../assets/pro3.jpeg';
 import { FaTwitter, FaGithub } from "react-icons/fa";
-import { FaFacebookMessenger } from "react-icons/fa6";
+// import { FaFacebookMessenger } from "react-icons/fa6";
+import { FaWhatsapp } from 'react-icons/fa';
+import { FaTiktok } from 'react-icons/fa';
 
 const Hero = () => {
   return (
@@ -26,9 +28,10 @@ const Hero = () => {
         </div>
 
         <div className="social-icons">
-          <a href="https://twitter.com" target="_blank" rel="noreferrer"><FaTwitter /></a>
-          <a href="https://facebook.com" target="_blank" rel="noreferrer"><FaFacebookMessenger /></a>
-          <a href="https://github.com" target="_blank" rel="noreferrer"><FaGithub /></a>
+          <a href="https://x.com/DavidObasu99069?t=2hPGL0nLWimkorgkpDOW8w&s=08" target="_blank" rel="noreferrer"><FaTwitter /></a>
+          <a href="https://github.com/David2008-coder/Portfolio1" target="_blank" rel="noreferrer"><FaGithub /></a>
+          <a href="https://wa.me/2348142657490" target="_blank" rel="noreferrer"><FaWhatsapp /></a>
+          <a href="https://www.tiktok.com/@p.david_dev?_r=1&_t=ZS-91OnCidPpyB" target="_blank" rel="noreferrer"><FaTiktok /></a>
         </div>
       </div>
 
