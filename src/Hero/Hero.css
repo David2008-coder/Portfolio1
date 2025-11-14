@@ -185,6 +185,11 @@
     padding: 60px 5%;
   }
 
+  /* Global fix for mobile overflow */
+body {
+  overflow-x: hidden;
+}
+
   .hero-title {
     font-size: 2.6rem;
   }

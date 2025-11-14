@@ -141,4 +141,9 @@
   .form-group label {
     left: 12px;
   }
+  /* Global fix for mobile overflow */
+body {
+  overflow-x: hidden;
+}
+
 }

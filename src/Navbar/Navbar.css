@@ -96,6 +96,11 @@
     align-items: center;
     transition: right 0.3s ease;
   }
+  /* Global fix for mobile overflow */
+body {
+  overflow-x: hidden;
+}
+
 
   .nav-links.open {
     right: 0;
