@@ -8,11 +8,12 @@ const About = () => {
 
       <div className="about-content">
         <p className="about-text">
-          Hello! I’m <strong>David Obasuke Tamilore</strong>, a passionate software developer from Nigeria
-          with over <strong>4 years of experience</strong> in building modern web applications.
+          Hello! I’m <strong>David Obasuke Tamilore</strong>, a passionate Frontend developer from Nigeria
+          with over <strong>2 years of experience</strong> in building modern web applications and i am also learning
+           backend technologies like Java and python  .
           I have a deep passion for <span className="highlight">Artificial Intelligence</span>,
           <span className="highlight"> Machine Learning</span>, and <span className="highlight">Robotics</span>.
-          My dream is to help Africa become a global leader in intelligent technologies.
+          My dream is to help Africa become a global leader in Ai & Robotics intelligent technologies.
         </p>
 
         <p className="about-text">

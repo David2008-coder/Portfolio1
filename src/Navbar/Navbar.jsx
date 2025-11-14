@@ -24,14 +24,18 @@ const Navbar = () => {
       <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
         <a href="#hero" onClick={() => setMenuOpen(false)}>Home</a>
         <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
-        <a href="#gallery" onClick={() => setMenuOpen(false)}>Gallery</a>
+        <a href="#project" onClick={() => setMenuOpen(false)}>Gallery</a>
         <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
         <a href="#project" onClick={() => setMenuOpen(false)}>
           <button className="nav-btn">Projects</button>
         </a>
       </nav>
 
-      <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+      {/* MENU TOGGLE ALWAYS ON TOP */}
+      <div
+        className="menu-toggle"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
         <img
           src={menuOpen ? closeIcon : menuIcon}
           alt="menu toggle"

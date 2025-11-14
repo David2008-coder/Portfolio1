@@ -31,7 +31,7 @@
   border: 2px solid green;
   border-radius: 15px;
   overflow: hidden;
-  width: 350px;
+  width: 600px;
   box-shadow: 0 5px 15px rgba(0, 255, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -64,14 +64,29 @@
   line-height: 1.5;
 }
 
+
+/* Make videos responsive */
+.project-card video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 2px solid green;
+  border-radius: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .project-grid {
     flex-direction: column;
     align-items: center;
   }
-
+  
   .project-card {
-    width: 90%;
+    width: 100%;
+  }
+
+  .project-card video {
+    width: 100%;
+    height: auto;
   }
 }

@@ -1,6 +1,9 @@
 import React from 'react';
 import './Hero.css';
-import project11 from '../assets/project11.png';
+import david1 from '../assets/david2.jpeg';
+import pro1 from '../assets/pro1.jpeg';
+import pro2 from '../assets/pro2.jpeg';
+import pro3 from '../assets/pro3.jpeg';
 import { FaTwitter, FaGithub } from "react-icons/fa";
 import { FaFacebookMessenger } from "react-icons/fa6";
 
@@ -19,7 +22,7 @@ const Hero = () => {
 
         <div className="hero-buttons">
           <a href="#contact" className="btn primary-btn">Hire Me</a>
-          <a href="#about" className="btn secondary-btn">Let's Talk</a>
+          <a href="#contact" className="btn secondary-btn">Let's Talk</a>
         </div>
 
         <div className="social-icons">
@@ -30,7 +33,7 @@ const Hero = () => {
       </div>
 
       <div className="hero-image">
-        <img src={project11} alt="David Obasuke" />
+        <img src={david1} alt="David Obasuke" />
         <div className="floating-bubble bubble1"></div>
         <div className="floating-bubble bubble2"></div>
         <div className="floating-bubble bubble3"></div>

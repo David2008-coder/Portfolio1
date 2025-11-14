@@ -71,7 +71,10 @@
 .menu-toggle {
   display: none;
   cursor: pointer;
+  z-index: 2000;     /* ⭐ FIX — keeps close icon clickable */
+  position: relative;
 }
+
 
 .menu-icon {
   width: 32px;

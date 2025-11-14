@@ -20,3 +20,8 @@ body {
     transform: translateX(0);
   }
 }
+
+
+* {
+  scroll-behaviour: smooth;
+}
