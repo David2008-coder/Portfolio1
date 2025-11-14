@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <div className="nav-logo">Davis_Portfolio</div>
+      <div className="nav-logo">David Obasuke</div>
 
       <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
         <a href="#hero" onClick={() => setMenuOpen(false)}>Home</a>
