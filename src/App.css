@@ -2,7 +2,7 @@
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  
+
 }
 
 body {
@@ -13,6 +13,7 @@ body {
   animation: slideInLeft 2s ease-in 0s both;
 
   transform: translateX(-150px);
+  overflow-x: hidden;
 }
 
 @keyframes slideInLeft {
@@ -24,7 +25,15 @@ body {
   }
 }
 
-
-* {
-  scroll-behaviour: smooth;
+html, body {
+  overflow-x: hidden;
+  width: 100%;
 }
+
+
+/* @media (max-width:) */
+
+
+/* * {
+  scroll-behaviour: smooth;
+} */

@@ -182,7 +182,7 @@
   .hero-section {
     flex-direction: column-reverse;
     text-align: center;
-    padding: 60px 5%;
+    padding: 6px;
   }
 
   /* Global fix for mobile overflow */
