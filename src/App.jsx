@@ -5,6 +5,7 @@ import Hero from './Hero/Hero';
 import About from './About/About';
 import Contact from './Contact/contact';
 import Project from './Projects/Project';
+import ProjectSection from './ProjectSection/ProjectSection';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       < Hero/>
       <About/>
       <Project/>
+      <ProjectSection/>
       <Contact/>
     </div>
   )
